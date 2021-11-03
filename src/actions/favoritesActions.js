@@ -1,15 +1,15 @@
-const TOGGLE_FAVORITES = 'TOGGLE_FAVORITES';
-const ADD_FAVORITES = 'ADD_FAVORTIES';
-const DELETE_FAVORTIES = 'DELETE_FAVORITES';
+export const TOGGLE_FAVORITES = 'TOGGLE_FAVORITES';
+export const ADD_FAVORITES = 'ADD_FAVORTIES';
+export const DELETE_FAVORITES = 'DELETE_FAVORITES';
 
-const toggleFavorites = () => {
+export const toggleFavorites = () => {
     return ({type: TOGGLE_FAVORITES});
 }
 
-const addFavorites = (movie) => {
+export const addFavorites = (movie) => {
     return ({type: ADD_FAVORITES, payload: movie});
 }
 
-const deleteFavorites = (id) => {
-    return ({type: DELETE_FAVORTIES, payload: id})
+export const deleteFavorites = (id) => {
+    return ({type: DELETE_FAVORITES, payload: id})
 }
